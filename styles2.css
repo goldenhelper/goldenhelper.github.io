@@ -50,9 +50,13 @@ header {
 }
 
 .intro {
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     opacity: 0;
     animation: fadeIn 1s ease-out forwards;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em; /* Adjust as needed */
+    line-height: 1.6;
+    color: white; /* Adjust text color */
 }
 
 .intro h1 {
