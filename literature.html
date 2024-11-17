@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #e0e0e0;
+            --accent-color: #4a90e2;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .book-list li {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .authors {
+            font-style: italic;
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bezierCanvas"></canvas>
+    <div class="content">
+        <h1>Literature</h1>
+
+        <div class="section">
+            <h2>Fiction</h2>
+            <ul class="book-list">
+                <li><a href="https://en.wikipedia.org/wiki/She_and_Her_Cat" target="_blank">Она и ее кот</a> by <a href="https://en.wikipedia.org/wiki/Makoto_Shinkai" target="_blank">Makoto Shinkai</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Dream_of_a_Ridiculous_Man" target="_blank">Сон смешного человека</a> by <a href="https://en.wikipedia.org/wiki/Fyodor_Dostoevsky" target="_blank">Fyodor Dostoevsky</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Black_Obelisk" target="_blank">Черный обелиск</a> by <a href="https://en.wikipedia.org/wiki/Erich_Maria_Remarque" target="_blank">Erich Maria Remarque</a></li>
+                <li><a href="#" target="_blank">Часы нашего счастья</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">Власть книжного червя</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">Класс превосходства</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">Игра лжецов</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">The Prince of Nothing (князь пустоты)</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Gary_Polsen" target="_blank">Топор - Гари Полсен</a> by <a href="https://en.wikipedia.org/wiki/Gary_Polsen" target="_blank">Gary Polsen</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank">Бог-император Дюны</a> by <a href="https://en.wikipedia.org/wiki/Frank_Herbert" target="_blank">Frank Herbert</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)" target="_blank">Задача трёх тел</a> by <a href="https://en.wikipedia.org/wiki/Liu_Cixin" target="_blank">Liu Cixin</a></li>
+                <li><a href="#" target="_blank">The Powers of the Earth</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">Causes of Separation</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="#" target="_blank">Гримгар пепла и иллюзий</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Permutation_City" target="_blank">Permutation City</a> by <a href="https://en.wikipedia.org/wiki/Greg_Egan" target="_blank">Greg Egan</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/A_Fire_Upon_the_Deep" target="_blank">A Fire Upon the Deep</a> by <a href="https://en.wikipedia.org/wiki/Vernor_Vinge" target="_blank">Vernor Vinge</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Player_of_Games" target="_blank">Player of Games</a> by <a href="https://en.wikipedia.org/wiki/Iain_M._Banks" target="_blank">Iain M. Banks</a></li>
+                <!-- Added Fiction Books -->
+                <li><a href="https://en.wikipedia.org/wiki/The_Dispossessed" target="_blank">The Dispossessed</a> by <a href="https://en.wikipedia.org/wiki/Ursula_K._Le_Guin" target="_blank">Ursula K. Le Guin</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Exhalation_(short_story)" target="_blank">Exhalation</a> by <a href="https://en.wikipedia.org/wiki/Ted_Chiang" target="_blank">Ted Chiang</a></li>
+            </ul>
+            
+            <div class="authors">
+                Notable authors: <a href="https://en.wikipedia.org/wiki/Robert_A._Heinlein" target="_blank">Роберт Хайнлайн</a>, <a href="https://en.wikipedia.org/wiki/Isaac_Asimov" target="_blank">Айзек Азимов</a>, <a href="https://en.wikipedia.org/wiki/Carl_Sagan" target="_blank">Карл Саган</a>, <a href="https://en.wikipedia.org/wiki/Kurt_vonnegut" target="_blank">Курт Воннегут</a>, <a href="https://en.wikipedia.org/wiki/Douglas_Adams" target="_blank">Дуглас Адамс</a>, 
+                <a href="https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem" target="_blank">Станислав Лем</a>, <a href="https://en.wikipedia.org/wiki/Orson_Scott_Card" target="_blank">Орсон Скотт Кард</a>, <a href="https://en.wikipedia.org/wiki/Herbert_Frank" target="_blank">Герберт Франк</a>, <a href="https://en.wikipedia.org/wiki/William_Gibson_(novelist)" target="_blank">Уильям Гибсон</a>, <a href="https://en.wikipedia.org/wiki/Neal_Stephenson" target="_blank">Нил Стивенсон</a>, 
+                <a href="https://en.wikipedia.org/wiki/Robert_Shekli" target="_blank">Роберт Шекли</a>, <a href="https://en.wikipedia.org/wiki/John_Kramer_(character)" target="_blank">Джон Крамер</a>, <a href="https://en.wikipedia.org/wiki/George_Orwell" target="_blank">Джордж Оруэлл</a>, <a href="https://en.wikipedia.org/wiki/Ursula_K._Le_Guin" target="_blank">Ursula K. Le Guin</a>, <a href="https://en.wikipedia.org/wiki/Greg_Egan" target="_blank">Greg Egan</a>, <a href="https://en.wikipedia.org/wiki/Ted_Chiang" target="_blank">Ted Chiang</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Non-Fiction</h2>
+            <ul class="book-list">
+                <li><a href="https://en.wikipedia.org/wiki/Compatibility_(book)" target="_blank">Совместимость. Как контролировать искусственный интеллект</a> by <a href="https://en.wikipedia.org/wiki/Stuart_Russell" target="_blank">Стюарт Рассел</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Life_3.0" target="_blank">Жизнь 3.0</a> by <a href="https://en.wikipedia.org/wiki/Max_Tegmark" target="_blank">Макс Эрик Тегмарк</a></li>
+                <li><a href="#" target="_blank">Цивилизация с нуля</a> by <a href="https://en.wikipedia.org/wiki/Lewis_Dartnell" target="_blank">Льюис Дартнелл</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank">Думай медленно... Решай быстро</a> by <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman" target="_blank">Даниэль Канеман</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach" target="_blank">Гедель, Эшер, Бах</a> by <a href="https://en.wikipedia.org/wiki/Douglas_Hofstadter" target="_blank">Douglas Hofstadter</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/How_to_Write_Science_Fiction_%26_Fantasy" target="_blank">How to Write Science Fiction & Fantasy</a> by <a href="https://en.wikipedia.org/wiki/Orson_Scott_Card" target="_blank">Orson Scott Card</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Nonviolent_Communication" target="_blank">Ненасильственное общение</a> by <a href="https://en.wikipedia.org/wiki/Marshall_B._Rosenberg" target="_blank">Маршалл Розенберг</a></li>
+                <li><a href="#" target="_blank">Лекции Фейнмана по физике</a> by <a href="https://en.wikipedia.org/wiki/Richard_Feynman" target="_blank">Ричард Фейнман</a></li>
+                <li><a href="#" target="_blank">Энергетика черных дыр</a> by <a href="https://en.wikipedia.org/wiki/Kip_Thorne" target="_blank">Кип Торн</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Algorithms_to_live_by" target="_blank">Algorithms to live by</a> by <a href="#" target="_blank">Brian J. Kraft</a>, et al.</li>
+                <!-- Added Non-Fiction Books -->
+                <li><a href="#" target="_blank">Filthy Lucre: Economics for People Who Hate Capitalism</a> by <a href="https://en.wikipedia.org/wiki/Joseph_Heath" target="_blank">Joseph Heath</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Mortal_Questions_(book)" target="_blank">"Mortal Questions"</a> by <a href="https://en.wikipedia.org/wiki/Thomas_Nagel" target="_blank">Thomas Nagel</a></li>
+                <li><a href="#" target="_blank">"Elephant in the Brain"</a> by <a href="#" target="_blank">Lucas Simler</a> and <a href="#" target="_blank">Thomas Hanson</a></li>
+                <li><a href="#" target="_blank">How to Talk About Books You Haven't Read</a> by <a href="#" target="_blank">Bayard</a></li>
+                <li><a href="#" target="_blank">Tell Me No Lies: Investigative Journalism and Its Triumphs</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance" target="_blank">Zen and the Art of Motorcycle Maintenance</a> by <a href="https://en.wikipedia.org/wiki/Robert_Pirsig" target="_blank">Robert M. Pirsig</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Dispossessed" target="_blank">The Dispossessed</a> by <a href="https://en.wikipedia.org/wiki/Ursula_K._Le_Guin" target="_blank">Ursula K. Le Guin</a></li>
+                <li><a href="#" target="_blank">The Alignment Problem</a> by <a href="#" target="_blank">Christian</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach" target="_blank">Gödel, Escher, Bach: An Eternal Golden Braid</a> by <a href="https://en.wikipedia.org/wiki/Douglas_Hofstadter" target="_blank">Douglas Hofstadter</a></li>
+                <li><a href="#" target="_blank">Impro: Improvisation and the Theatre</a> by <a href="https://en.wikipedia.org/wiki/Jerry_Johnstone" target="_blank">Jerry Johnstone</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind" target="_blank">Sapiens: A Brief History of Humankind</a> by <a href="https://en.wikipedia.org/wiki/Yuval_Noah_Harari" target="_blank">Yuval Noah Harari</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Fabric_of_Reality" target="_blank">Fabric of Reality</a> by <a href="https://en.wikipedia.org/wiki/David_D_Deutsch" target="_blank">David Deutsch</a></li>
+                <li><a href="#" target="_blank">How To Actually Change Your Mind</a> by <a href="#" target="_blank">Eliezer Yudkowsky</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/From_Bacteria_to_Bach_and_Back" target="_blank">From Bacteria to Bach and Back</a> by <a href="https://en.wikipedia.org/wiki/Daniel_Dennett" target="_blank">Daniel Dennett</a></li>
+                <li><a href="https://hyperboleandahalf.com" target="_blank">Hyperbole and a Half</a> by <a href="https://en.wikipedia.org/wiki/Allie_Brosh" target="_blank">Allie Brosh</a> [comics]</li>
+                <li><a href="#" target="_blank">The Hedonistic Imperative</a> by <a href="#" target="_blank">David Pearce</a></li>
+                <li><a href="#" target="_blank">Replacing Guilt</a> by <a href="#" target="_blank">Josh</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Anime & Shows</h2>
+            <ul class="book-list">
+                <li><a href="https://en.wikipedia.org/wiki/Hikaru_no_Go" target="_blank">Хикару и Го</a> by <a href="https://en.wikipedia.org/wiki/Yumi_Wasikawa" target="_blank">Yumi Wasikawa</a> and <a href="https://en.wikipedia.org/wiki/Yoshihiro_Tanaka" target="_blank">Yoshihiro Tanaka</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Promised_Neverland" target="_blank">Обещанный Неверленд</a> by <a href="https://en.wikipedia.org/wiki/Kakashi_Ikuta" target="_blank">Kakashi Ikuta</a> and <a href="https://en.wikipedia.org/wiki/Shuka_Azuma" target="_blank">Shuka Azuma</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Altered_Carbon" target="_blank">Видоизмененный углерод</a> by <a href="https://en.wikipedia.org/wiki/Richard_Morgan_(novelist)" target="_blank">Richard Morgan</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Vinland_Saga" target="_blank">Сага о винленде</a> by <a href="https://en.wikipedia.org/wiki/Makoto_Yamamoto" target="_blank">Makoto Yamamoto</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Gurren_Lagann" target="_blank">Гуренн-лаганн</a> by <a href="https://en.wikipedia.org/wiki/Hiroyuki_Ishima" target="_blank">Hiroyuki Ishima</a></li>
+                <li><a href="#" target="_blank">91 день</a> by <a href="#" target="_blank">[Author Name]</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion" target="_blank">Евангелион</a> by <a href="https://en.wikipedia.org/wiki/Hideaki_Anno" target="_blank">Hideaki Anno</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Mushishi" target="_blank">Мушиши</a> by <a href="https://en.wikipedia.org/wiki/Yuki_Nagato_(manga_author)" target="_blank">Yuki Nagato</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
